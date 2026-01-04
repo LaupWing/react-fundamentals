@@ -123,3 +123,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Animated blob background - slow vibing */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(80px, -100px) scale(1.1);
+  }
+  50% {
+    transform: translate(-60px, 60px) scale(0.9);
+  }
+  75% {
+    transform: translate(40px, 80px) scale(1.05);
+  }
+}
+
+.animate-blob {
+  animation: blob 8s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 6s;
+}
+
+.animation-delay-5000 {
+  animation-delay: 8s;
+}

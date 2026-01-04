@@ -159,3 +159,32 @@
 .animation-delay-5000 {
   animation-delay: 8s;
 }
+
+/* Spinning gradient border for buttons */
+@keyframes gradient-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-gradient-spin {
+  animation: gradient-spin 2s linear infinite;
+}
+
+/* Pulsing glow for gradient button */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.2), 0 0 20px rgba(139, 92, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.35), 0 0 30px rgba(139, 92, 246, 0.2);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.5s ease-in-out infinite;
+}
